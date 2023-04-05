@@ -1,0 +1,131 @@
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("img/bg-ibis.jpg");
+}
+
+h1 {
+  color: #000;
+}
+
+h3 {
+  text-align: center;
+}
+
+h3::before {
+  content: url(img/before-icon-ibis.png);
+  /* color: grey; */
+}
+
+h3::after {
+  content: url(img/after-icon-ibis.png);
+  /* color: grey; */
+}
+
+b {
+  color: #000000;
+  font-weight: 600;
+}
+
+i {
+  color: #444;
+  font-weight: 100;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #d3d5d6;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  background: rgba(38, 48, 54, 0.8);
+
+}
+
+.active, .accordion:hover {
+  /* background-color: #ccc; */
+  color: #fff;
+  font-weight: bold;
+  background: rgba(187, 139, 89, 0.8);
+
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  /* background: rgba(187, 139, 89, 0.8); */
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background: rgba(76, 175, 80, 0.1);
+}
+
+div {
+  /* background: rgb(76, 175, 80); */
+  /* background: rgba(76, 175, 80, 0.3);*/
+  /* padding: 10px; */
+}
+
+/* div.first {
+  background: rgba(76, 175, 80, 0.1);
+} */
+
+div.panel {
+  background: rgba(237, 231, 223, 0.8);
+}
+
+/* div.third {
+  background: rgba(76, 175, 80, 0.6);
+} */
+
+.bg-image {
+  /* Full height */
+  /* height: 50%; */
+  /* Center and scale the image nicely */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+}
+
+/* .img1 { background-image: url("img/bg.jpg"); } */
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
